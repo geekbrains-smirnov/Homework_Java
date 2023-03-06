@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class homework_03 {
 
     public static void main(String[] args) {
+        System.out.println("Задание №3: Реализовать простой калькулятор.");
+        System.out.println();
         Scanner scanner = new Scanner(System.in);
         double num1, num2, result;
         char operator;
@@ -39,6 +41,7 @@ public class homework_03 {
                 return;
         }
 
-        System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+        System.out.println();
+        System.out.println("Ответ: " + num1 + " " + operator + " " + num2 + " = " + result);
     }
 }
