@@ -9,5 +9,6 @@ public class Main {
 //        System.out.println(BubbleSort()); // Задача 1
 //        write(); // Задача 1
         parseString();
+
     }
 }

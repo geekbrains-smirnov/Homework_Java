@@ -14,7 +14,7 @@ public class Task02 {
     public static void parseString() {
         String str = "[{\"фамилия\":\"Иванов\",\"оценка\":\"5\",\"предмет\":\"Математика\"}, {\"фамилия\":\"Петрова\",\"оценка\":\"4\",\"предмет\":\"Информатика\"}, {\"фамилия\":\"Краснов\",\"оценка\":\"5\",\"предмет\":\"Физика\"}]";
         StringBuilder outputStringBuilder = new StringBuilder();
-        String[] students = str.replaceAll("[\\[\\]]", "").split("\\},\\s*\\{");
+        String[] students = str.replaceAll("[\\[\\]]", "").split("},\\s*\\{");
         for (String student : students) {
             String[] parts = student.split(",\\s*");
             String surname = parts[0].split(":\\s*\"")[1].replaceAll("\"", "");
