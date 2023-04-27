@@ -140,7 +140,16 @@ public class Task09 {
             System.out.println("Ноутбуки, соответствующие выбранным критериям, не найдены.");
         } else {
             System.out.println("Найденные ноутбуки:");
+            for (Laptop laptop : filteredLaptops) {
+                System.out.println("Бренд: " + laptop.getBrand());
+                System.out.println("Модель: " + laptop.getModel());
+                System.out.println("ОЗУ: " + laptop.getRam() + " ГБ");
+                System.out.println("Объем жесткого диска: " + laptop.getStorageCapacity() + " ГБ");
+                System.out.println("Операционная система: " + laptop.getOs());
+                System.out.println("Цвет: " + laptop.getColor());
+                System.out.println("Цена: $" + laptop.getPrice());
+                System.out.println();
+            }
         }
     }
 }
-
