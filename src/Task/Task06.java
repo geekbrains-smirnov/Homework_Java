@@ -21,7 +21,7 @@ public class Task06 {
         EnqueueList.addLast(1);
         System.out.print("Помещаем элемент '1' в конец очереди: ");
         System.out.println(EnqueueList);
-        System.out.print("Возвращаем первый элементиз очереди не удаляя его: ");
+        System.out.print("Возвращаем первый элемент из очереди не удаляя его: ");
         System.out.println(EnqueueList.peek());
         System.out.println(EnqueueList);
         System.out.print("Возвращаем первый элемент из очереди удаляя его: ");
